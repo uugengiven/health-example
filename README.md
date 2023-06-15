@@ -1,6 +1,7 @@
 Quick example dashboard for grabbing health checks and auto-updating the page every 10 seconds.
 
 The end points available are:
+
 `https://basic-bundle-tight-firefly-f0dd.owners.workers.dev/health` returns an array of health info objects
 ```
 [
@@ -23,7 +24,7 @@ The end points available are:
 ]
 ```
 
-`https://basic-bundle-tight-firefly-f0dd.owners.workers.dev/health/database` returns an array of health info objects
+`https://basic-bundle-tight-firefly-f0dd.owners.workers.dev/health/database` returns a single health object with a random status
 ```
 {
     name: "Database",
@@ -31,7 +32,7 @@ The end points available are:
 }
 ```
 
-`https://basic-bundle-tight-firefly-f0dd.owners.workers.dev/health/noonlight` returns an array of health info objects
+`https://basic-bundle-tight-firefly-f0dd.owners.workers.dev/health/noonlight` returns a single determinate health object
 ```
 {
     name: "Noonlight",
