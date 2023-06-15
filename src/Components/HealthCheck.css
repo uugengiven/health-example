@@ -1,0 +1,17 @@
+.check {
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+}
+
+.Healthy {
+    background-color: green;
+}
+
+.Degraded {
+    background-color: yellow;
+}
+
+.Failed {
+    background-color: red;
+}

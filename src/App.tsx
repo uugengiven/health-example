@@ -1,23 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {HealthCheck, MultiHealthCheck} from './Components/HealthCheck';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="check-container">
+        <HealthCheck endpoint="https://basic-bundle-tight-firefly-f0dd.owners.workers.dev/health/database"/>
+        <MultiHealthCheck endpoint="https://basic-bundle-tight-firefly-f0dd.owners.workers.dev/health"/>
       </header>
     </div>
   );
